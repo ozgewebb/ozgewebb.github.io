@@ -7,6 +7,10 @@
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    img {
+        max-width: 100%;
+    }
    
     .main {
         max-width: 1000px;
@@ -121,10 +125,6 @@
         background-color: #b2dce3; 
         color: #5B5941;
         font-family: Georgia, sans-serif;
-    }
-
-    .jumbotron img {
-        max-width: 100%;
     }
 
     #welcome {
