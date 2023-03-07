@@ -128,7 +128,7 @@ img {
     position: relative;
 }
 
-.jumbotron > div {
+.jumbotron>div {
     position: relative;
     z-index: 1;
 }
@@ -347,4 +347,41 @@ footer {
     background-color: lightgrey;
     color: white;
     text-align: center;
+}
+
+#pill-navigation {
+    padding-right: 0;
+}
+
+#pill-content {
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+ul.nav.nav-pills.nav-stacked {
+    border-right: 2px solid #f4511e;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0;
+}
+
+.nav-pills>li>a {
+    background-color: #66cdaa;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 22px 16px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: #ddd;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #ccc;
 }
