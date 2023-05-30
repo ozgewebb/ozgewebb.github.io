@@ -393,3 +393,9 @@ ul.nav.nav-pills.nav-stacked {
 .nav-pills>li.active>a:hover {
     background-color: #ccc;
 }
+
+.mb-40p {
+    margin-bottom: 40px;
+}
+
+/*  */
