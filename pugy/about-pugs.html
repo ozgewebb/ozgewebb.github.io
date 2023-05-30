@@ -188,27 +188,40 @@
   </div>
 
   <script>
-    //Part I begins here:
-    function openChapter(evt, chapterNo) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    var pillNav = document.getElementById('pill-navigation');
+    var pillContent = document.getElementById('pill-content');
+
+    function setPillHeights() {
+      pillContent.style.height = 'auto';
+      pillNav.style.height = 'auto';
+      if (window.outerWidth >= 992) {
+        var pillNavHeight = pillNav.getBoundingClientRect().height;
+        var pillContentHeight = pillContent.getBoundingClientRect().height;
+        var setHeight = Math.max(pillNavHeight, pillContentHeight);
+        pillContent.style.height = setHeight + 'px';
+        pillNav.style.height = setHeight + 'px';
+      }
+    }
+    window.addEventListener("load", setPillHeights);
+    window.addEventListener("resize", setPillHeights);
+
+    // MutationObserver in JS
+    // https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+    var config = { attributes: true, childList: true, subtree: true };
+
+    var callback = function (mutationList, observer) {
+      console.log(observer)
+      if (mutationList.length > 0) {
+        mutationList.forEach(function (mutation) {
+          if (mutation.attributeName === 'class' && Array.from(mutation.target.classList).includes('active')) {
+            setPillHeights();
+          }
+        });
+      }
     }
 
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-      //Part I ends here.
-      //Part II begins here:
-      document.getElementById(chapterNo).style.display = "block";
-      evt.currentTarget.className += " active";
-      // evt.currentTarget.className =  evt.currentTarget.className + "active"  (shorthand of programming)
-      //i++ means i = i + 1
-      }
-    //Part II ends here.
-    document.getElementById("defaultOpen").click();
+    var observer = new MutationObserver(callback);
+    observer.observe(pillNav, config);
   </script>
 
   <br>

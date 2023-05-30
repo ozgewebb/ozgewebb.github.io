@@ -365,7 +365,9 @@ footer p:last-child {
 }
 
 ul.nav.nav-pills.nav-stacked {
+    background-color: #86e1c2;
     border-right: 2px solid #f4511e;
+    height: 100%;
 }
 
 .nav-stacked>li+li {
