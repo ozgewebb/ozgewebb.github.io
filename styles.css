@@ -1,401 +1,69 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: white;
+    font-family: 'Arial', sans-serif;
+    background-color: #EDE8DC; /* Sayfa arka planı için açık krem rengi */
+    color: #333; /* Yazı rengi */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.topnav {
-    border-left-style: solid;
-    border-left-color: #f4511e;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-top-color: lightgrey;
-    border-right-color: lightgrey;
-    border-bottom-color: lightgrey;
-    border-left-width: 12px;
-    overflow: hidden;
-    background-color: whitesmoke;
-    margin: auto;
-}
-
-.topnav2 {
-    border-left-style: solid;
-    border-left-color: #f4511e;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-top-color: lightgrey;
-    border-right-color: lightgrey;
-    border-bottom-color: lightgrey;
-    border-left-width: 12px;
-    overflow: hidden;
-    background-color: whitesmoke;
-}
-
-.wrapper {
-    width: 960px;
-    margin: auto;
-
-}
-
-#contact {
-    text-align: right;
-}
-
-.fa-instagram {
-    background: mediumaquamarine;
-    color: white;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.topnav a {
-    float: left;
-    color: mediumaquamarine;
-    /*  text-align: center;*/
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-
-.topnav a:hover {
-    background-color: mediumaquamarine;
-    color: white;
-}
-
-.topnav a.active {
-    background-color: khaki;
-    color: white;
-}
-
-.topnav2 a {
-    float: left;
-    color: mediumaquamarine;
-    /*  text-align: center;*/
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav2 a:hover {
-    background-color: mediumaquamarine;
-    color: white;
-}
-
-.topnav2 a.active {
-    background-color: khaki;
-    color: white;
-}
-
-#slogan {
-    font-family: Georgia, sans-serif;
-    text-align: right;
-    color: mediumaquamarine;
-}
-
-.jumbotron {
-    background-color: #b2dce3;
-    border: solid lightgrey;
-    color: #5B5941;
-    font-family: Georgia, sans-serif;
-    padding-top: 1px;
-    position: relative;
-}
-
-.jumbotron>div {
-    position: relative;
-    z-index: 1;
-}
-
-#welcome {
-    width: 100%;
-    background-color: #629d85;
-    position: relative;
-    animation-name: greeting;
-    animation-duration: 4s;
-    animation-delay: -2s;
-    color: yellow;
-    font-size: 30px;
-    text-align: center;
-}
-
-@keyframes greeting {
-    0% {
-        background-color: #4dc4da;
-        left: 0px;
-        top: 0px;
-    }
-
-    25% {
-        background-color: #4dc4da;
-        left: 200px;
-        top: 0px;
-    }
-
-    50% {
-        background-color: white;
-        left: 200px;
-        top: 200px;
-        color: black;
-    }
-
-    75% {
-        background-color: green;
-        left: 0px;
-        top: 200px;
-        color: white;
-    }
-
-    100% {
-        background-color: #4dc4da;
-        left: 0px;
-        top: 0px;
-    }
-}
-
-.bg-paw {
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    max-height: 100%;
-    padding: 15px;
-}
-
-
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: mediumaquamarine;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 15px;
-    padding: 2px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 2px;
-    cursor: pointer;
-    vertical-align: middle
-}
-
-.button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button2 {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
-    color: #FFFFFF;
-    font-size: 14px;
-    padding: 12px;
-    width: 175px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    cursor: pointer;
-    vertical-align: middle
-}
-
-.button2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.jumbo-pugy {
-    color: #f4511e;
-}
-
-#woof {
-    color: #f4511e;
-    font-size: 14px;
-}
-
-h1 {
-    color: mediumaquamarine;
-    font-size: 30px;
-    word-break: break-all;
-}
-
-h6 {
-    color: #f4511e;
-    text-align: center;
-    font-size: 14px;
-}
-
-/*  div {
-        margin: px;
-    }
-*/
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding between each column */
-.row,
-.row>.column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-/* TODO: Remove class later. Unnecessary class since we use Bootstrap */
-.column2 {
-    float: left;
-    width: 25%;
-}
-
-.row {
-    margin: 8px -16px;
-}
-
-/* Add padding between each column */
-.row,
-.row>.content {
-    padding: 8px;
-    font-size: 15px;
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-sm-4 {
-    float: left;
-    width: 25%;
-    color: grey;
-}
-
-.tab {
-    border-right: 2px solid #f4511e;
-    float: left;
-    background-color: mediumaquamarine;
-    width: 15%;
-    height: 2300px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: white;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
     text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #A5B68D; /* Başlık arka planı için haki yeşil tonu */
+    color: white; /* Başlık rengi beyaz */
+    padding: 20px 0;
 }
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
+header h1 {
+    font-size: 36px;
+    color: white; /* Başlık yazısının rengi beyaz */
 }
 
-/* Style the tab content */
-.tabcontent {
-    float: right;
-    padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 85%;
-    border-left: none;
-    height: 300px;
+.profile-photo {
+    width: 150px; /* Fotoğrafın genişliği */
+    height: 150px; /* Fotoğrafın yüksekliği */
+    object-fit: cover; /* Fotoğrafın tamamını kesmeden göstermek için */
+    object-position: top; /* Fotoğrafın üst kısmını göstermek için */
+    border-radius: 50%; /* Fotoğrafı daire şeklinde yapmak için */
+    display: block; /* Fotoğrafın etrafında boşluk bırakmamak için */
+    margin: 0 auto; /* Fotoğrafı ortalamak için */
+    border: 4px solid #C1CFA1; /* Hafif açık yeşil border eklemek */
 }
 
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333; /* Linklerin rengi */
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #A5B68D; /* Hover efektiyle haki yeşil rengi */
+}
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgrey;
-    color: white;
     text-align: center;
-    padding: 16px 0;
+    font-size: 14px;
+    color: #888;
+    margin-top: 40px;
 }
 
-footer p:last-child {
-    margin-bottom: 0;
-}
-/*  */
-
-#pill-navigation {
-    padding-right: 0;
+footer p {
+    margin: 0;
 }
 
-#pill-content {
-    border: 1px solid #ccc;
-    border-left: none;
+footer .copyright {
+    color: #A5B68D; /* Footer'da copyright metnini haki yeşil yapalım */
 }
-
-ul.nav.nav-pills.nav-stacked {
-    background-color: #86e1c2;
-    border-right: 2px solid #f4511e;
-    height: 100%;
-}
-
-.nav-stacked>li+li {
-    margin-top: 0;
-}
-
-.nav-pills>li>a {
-    background-color: #66cdaa;
-    color: #ffffff;
-    border-radius: 0;
-    padding: 22px 16px;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-.nav>li>a:focus,
-.nav>li>a:hover {
-    background-color: #ddd;
-}
-
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
-    background-color: #ccc;
-}
-
-.mb-40p {
-    margin-bottom: 40px;
-}
-
-/*  */
