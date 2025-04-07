@@ -56,10 +56,12 @@ nav a:hover {
 /* Kontakt bilgilerini ortalamak ve yan yana yerleştirmek */
 .contact-info {
     display: flex;
-    justify-content: center; /* Ortalamak için */
-    align-items: center;
-    gap: 15px; /* Aralarındaki boşluk */
-    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #4A5541;
 }
 
 .contact-item {
@@ -114,25 +116,13 @@ footer .copyright {
 
 
 /* Mobil uyumlu stil */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header h1 {
-        font-size: 28px;
-    }
-
-    .profile-photo {
-        width: 120px;
-        height: 120px;
-    }
-
-    .contact-links a {
-        font-size: 20px;
-    }
-
-    .contact-links span {
-        font-size: 20px;
+    .contact-info span::after {
+        content: "";
     }
 }
