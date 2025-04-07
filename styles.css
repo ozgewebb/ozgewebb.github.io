@@ -53,11 +53,54 @@ nav a:hover {
     color: #A5B68D; /* Hover efektiyle haki yeşil rengi */
 }
 
+/* Kontakt bilgilerini ortalamak ve yan yana yerleştirmek */
+.contact-info {
+    display: flex;
+    justify-content: center; /* Ortalamak için */
+    align-items: center;
+    gap: 15px; /* Aralarındaki boşluk */
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* İkon ve metni hizala */
+}
+
+.contact-link {
+    color: #4A5541; /* Başlangıç rengi (sayfa rengiyle uyumlu) */
+    text-decoration: none; /* Link altı çizgiyi kaldır */
+    display: flex;
+    align-items: center; /* İkon ve metni hizala */
+}
+
+.contact-link .icon {
+    font-size: 18px; /* İkon boyutu */
+    margin-right: 8px; /* İkon ile metin arasına boşluk */
+    color: inherit; /* İkonun rengi, bağlantının rengiyle aynı olacak */
+}
+
+/* Hover efekti */
+.contact-link:hover {
+    color: #A5B68D; /* Hover rengi */
+}
+
+.contact-link:hover .icon {
+    color: #A5B68D; /* Hover durumunda ikon rengi */
+}
+
+/* Ayracı renk ve stil */
+.separator {
+    color: #4A5541; /* Ayracı sayfa rengiyle uyumlu yapalım */
+    font-size: 18px;
+}
+
+/* Footer kısmını ortalamak */
 footer {
     text-align: center;
+    margin-top: 40px;
     font-size: 14px;
     color: #888;
-    margin-top: 40px;
 }
 
 footer p {
@@ -65,30 +108,10 @@ footer p {
 }
 
 footer .copyright {
-    color: #A5B68D; /* Footer'da copyright metnini haki yeşil yapalım */
+    color: #4A5541; /* Footer'daki metni sayfa rengiyle uyumlu yapalım */
 }
 
-/* LinkedIn, Telefon ve E-posta Linkleri için stil */
-.contact-links {
-    text-align: center;
-    margin-top: 20px;
-}
 
-.contact-links a {
-    margin: 0 15px;
-    color: #333; /* Linklerin rengi */
-    text-decoration: none;
-    font-size: 24px; /* Font boyutunu artırdım */
-}
-
-.contact-links a:hover {
-    color: #A5B68D; /* Hover efektiyle haki yeşil rengi */
-}
-
-.contact-links span {
-    font-size: 24px; /* Telefon numarası için font boyutu */
-    color: #333; /* Yazı rengi */
-}
 
 /* Mobil uyumlu stil */
 @media screen and (max-width: 768px) {
