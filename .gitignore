@@ -1,0 +1,39 @@
+# macOS sistem dosyaları
+.DS_Store
+
+# Windows sistem dosyaları
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code ayarları
+.vscode/
+
+# Node.js / npm varsa
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Genel log dosyaları
+*.log
+
+# Geçici dosyalar
+*.tmp
+*.swp
+*.swo
+*~
+
+# Git çakışma dosyaları
+*.orig
+
+# Build çıktısı klasörleri (kullanıyorsan)
+dist/
+build/
+
+# Env dosyaları (gizli bilgiler varsa)
+.env
+.env.*
+
+# GitHub Pages için gereksiz olabilecekler
+.idea/
