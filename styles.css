@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #EDE8DC; /* Sayfa arka planı için açık krem rengi */
-    color: #333; /* Yazı rengi */
+    color: #4A5541; /* #333 Onceki Yazı rengi */
     margin: 0;
     padding: 0;
 }
@@ -66,4 +66,50 @@ footer p {
 
 footer .copyright {
     color: #A5B68D; /* Footer'da copyright metnini haki yeşil yapalım */
+}
+
+/* LinkedIn, Telefon ve E-posta Linkleri için stil */
+.contact-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin: 0 15px;
+    color: #333; /* Linklerin rengi */
+    text-decoration: none;
+    font-size: 24px; /* Font boyutunu artırdım */
+}
+
+.contact-links a:hover {
+    color: #A5B68D; /* Hover efektiyle haki yeşil rengi */
+}
+
+.contact-links span {
+    font-size: 24px; /* Telefon numarası için font boyutu */
+    color: #333; /* Yazı rengi */
+}
+
+/* Mobil uyumlu stil */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-links a {
+        font-size: 20px;
+    }
+
+    .contact-links span {
+        font-size: 20px;
+    }
 }
